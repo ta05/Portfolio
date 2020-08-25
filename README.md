@@ -12,6 +12,7 @@ Happy Coding,
 
 Tolu
 
+<br/>
 
 Credits to Traversy Media for their tutorial on Django, and Dennis Ivy for inspiration for my portfolio design.
 
