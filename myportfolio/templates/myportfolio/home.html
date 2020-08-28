@@ -1,21 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card card-body"></div>
-        </div>
-        <div class="col-md-9">
-            <div class="card card-body"></div>
+<div class="row" style="padding: 10px;">
+    <div class="col-md-3">
+        <div class="card card-body">
+            <img src="{% static '/images/Tolu-2012.jpg' %}" alt="Tolu">
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card card-body"></div>
-        </div>
-        <div class="col-md-6">
-            <div class="card card-body"></div>
-        </div>
+    <div class="col-md-9">
+        <div class="card card-body"></div>
+    </div>
+</div>
+<div class="row" style="padding: 10px;">
+    <div class="col-md-6">
+        <div class="card card-body"></div>
+    </div>
+    <div class="col-md-6">
+        <div class="card card-body"></div>
     </div>
 </div>
 {% endblock %}
