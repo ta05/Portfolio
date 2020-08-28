@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block extrahead %}
+<link href="{% static '/css/home.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
 {% block content %}
 <div class="row" style="padding: 10px;">
     <div class="col-md-3">
         <div class="card card-body">
-            <img src="{% static '/images/Tolu-2012.jpg' %}" alt="Tolu">
+            <img id="myimage" src="{% static '/images/Tolu-2012.jpg' %}" alt="Tolu">
         </div>
     </div>
     <div class="col-md-9">
