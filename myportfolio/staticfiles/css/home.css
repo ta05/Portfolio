@@ -1,5 +1,9 @@
 /* Styling for elements specific to the homepage */
 
+#profile-wrapper {
+    text-align: center;
+}
+
 #myimage {
     width: 180px;
     height: 200px;

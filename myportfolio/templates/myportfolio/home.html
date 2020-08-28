@@ -8,20 +8,56 @@
 {% block content %}
 <div class="row" style="padding: 10px;">
     <div class="col-md-3">
-        <div class="card card-body">
-            <img id="myimage" src="{% static '/images/Tolu-2012.jpg' %}" alt="Tolu">
+        <div id="profile-wrapper" class="card card-body h-100" style="text-align: center;">
+            <img id="myimage" src="{% static '/images/Tolu-2012.jpg' %}" alt="Tolu" style="border: 2px solid rgba(255, 255, 255, 0.45);">
+            <h2>Tolu Alimi</h2>
+            <p style="font-size: small;">Software Engineer and Analyst</p>
         </div>
     </div>
     <div class="col-md-9">
-        <div class="card card-body"></div>
+        <div class="card card-body h-100">
+            <h2>About Me</h2>
+            <p>
+                A software engineer and Stanford graduate certified in full stack development by the University of Texas. 
+                Versed in programming, scripting and markup languages, including Python, JavaScript and CSS. 
+                An analytically-oriented problem-solver and go-getter. 
+            </p>
+            <p>
+                Undertook a long-term project to learn and overhaul the financial reporting of company’s compliance services. 
+                Aims to accomplish at least one of the following ‒ new functionality, improved user experience, optimization. 
+                Personal main objective is simple: continuous self-improvement. 
+            </p>
+            <p>
+                Thrilled to take that step as a potential addition to your team.
+            </p>
+        </div>
+        
     </div>
 </div>
 <div class="row" style="padding: 10px;">
     <div class="col-md-6">
-        <div class="card card-body"></div>
+        <div class="card card-body h-100">
+            <h2>Technical Skills</h2>
+            <p>
+                <span class="skill-category" style="font-weight: bold;">Languages:</span> Java, Python, HTML, CSS, JavaScript, SQL, PHP
+            </p>
+            <p>
+                <span class="skill-category" style="font-weight: bold;">Frameworks:</span> React, Angular, Bootstrap, jQuery, Express.js, Django
+            </p>
+            <p>
+                <span class="skill-category" style="font-weight: bold;">Other Technologies:</span> Excel, Git, Node.js, Sequelize.js, Heroku, MongoDB
+            </p>
+        </div>
     </div>
     <div class="col-md-6">
-        <div class="card card-body"></div>
+        <div class="card card-body h-100">
+            <h2>Working On</h2>
+            <ul>
+                <li>Machine Learning & Tensor Flow</li>
+                <li>NumPy, R and Matplotlib</li>
+                <li>swar/nba_api</li>
+            </ul>
+        </div>
     </div>
 </div>
 {% endblock %}
