@@ -15,12 +15,12 @@ class Migration(migrations.Migration):
             name='Project',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=200)),
-                ('description', models.CharField(max_length=200)),
-                ('imageURL', models.CharField(max_length=200)),
-                ('fullURL', models.CharField(max_length=200)),
-                ('siteURL', models.CharField(max_length=200)),
-                ('gitURL', models.CharField(max_length=200)),
+                ('title', models.CharField(max_length=255)),
+                ('description', models.TextField()),
+                ('imagePath', models.CharField(max_length=255)),
+                ('fullImagePath', models.CharField(max_length=255)),
+                ('siteURL', models.CharField(max_length=255)),
+                ('gitURL', models.CharField(max_length=255)),
             ],
         ),
     ]
