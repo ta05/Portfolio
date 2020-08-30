@@ -4,6 +4,8 @@
 
 Here you can read up about me and find some my recent projects.
 
+The portfolio was built using Django with a MySQL backend.
+
 If you'd like to reach out to me, you can email me at talimi2000@gmail.com.
 
 If you like the design of my portfolio, feel free to fork my repo and clone my code.
