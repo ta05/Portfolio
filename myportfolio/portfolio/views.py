@@ -9,7 +9,6 @@ from .models import Project
 def portfolio(request):
     project_list = Project.objects.all()
     context = {'project_list': project_list}
-    print(context)
     return render(request, 'myportfolio/portfolio.html', context)
 
 def create_img_path(project):
