@@ -7,4 +7,11 @@ from .models import Project
 # Create your views here.
 
 def portfolio(request):
-    return render(request, 'myportfolio/portfolio.html')
+    project_list = Project.objects.all()
+    context = {'project_list': project_list}
+    print(context)
+    return render(request, 'myportfolio/portfolio.html', context)
+
+def create_img_path(project):
+    project["imagePath"] = "/images/" + project["imagePath"]
+    project["fullImagePath"]="/images/" + project["fullImagePath"]

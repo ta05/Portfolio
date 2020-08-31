@@ -2,13 +2,18 @@
 {% load static %}
 
 {% block content %}
-<div class="row" style="padding: 10px;">
-    <div class="col-md-3">
-        <div class="card card-body h-100" style="text-align: center;">
-            <img id="myimage" src="{% static '/images/Tolu-2012.jpg' %}" alt="Tolu" style="border: 2px solid rgba(255, 255, 255, 0.45);">
-            <h2>Tolu Alimi</h2>
-            <p style="font-size: small;">Software Engineer and Analyst</p>
+    {% if project_list %}
+    <div class="row" style="padding: 10px;">
+        {% for project in project_list %}
+        <div class="col-md-3">
+            <div class="card" style="text-align: center; border: 2px solid rgba(255, 255, 255, 0.45);">
+                <img class="card-img-top" src='{% static project.imagePath %}'>
+                <div class="card-body">
+                    <h2 class="project-title" style="font-size:medium;">{{ project.title }}</h2>
+                </div>
+            </div>
         </div>
+        {% endfor %}
     </div>
-</div>
+    {% endif %}
 {% endblock %}
