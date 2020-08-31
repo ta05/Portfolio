@@ -11,7 +11,9 @@
                     <img class="card-img-top" src='{% static project.imagePath %}' alt="{{project.imageAlt}}">
                 </a>
                 <div class="card-body">
-                    <h2 class="project-title" style="font-size:medium;">{{ project.title }}</h2>
+                    <a href="{% url 'portfolio:project' project.id %}">
+                        <h2 class="project-title" style="color: black; font-size:medium;">{{ project.title }}</h2>
+                    </a>
                 </div>
             </div>
         </div>

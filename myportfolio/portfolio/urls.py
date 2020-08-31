@@ -6,4 +6,5 @@ from . import views
 app_name = 'portfolio'
 urlpatterns = [
     path('', views.portfolio, name="portfolio"),
+    path('<int:project_id>', views.project, name="project")
 ]
