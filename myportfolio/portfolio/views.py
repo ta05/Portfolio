@@ -10,7 +10,7 @@ from .models import Project
 def portfolio(request):
     project_list = Project.objects.all()
     context = {'project_list': project_list}
-    return render(request, 'myportfolio/portfolio.html', context)
+    return render(request, 'portfolio/portfolio.html', context)
 
 # Gets a specific project and displays it
 def project(request, project_id):
@@ -18,4 +18,4 @@ def project(request, project_id):
         project = Project.objects.get(pk=project_id)
     except Project.DoesNotExist:
         raise Http404("Project does not exist")
-    return render(request, 'myportfolio/project.html', {'project': project})
+    return render(request, 'portfolio/project.html', {'project': project})

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row" style="padding: 10px;">
+    <div class="col-md-10 offset-md-1">
+        <div class="card" style="text-align: center; border: 2px solid rgba(255, 255, 255, 0.45);">
+            <a href="{% static project.fullImagePath %}" target="blank">
+                <img class="card-img-top" src='{% static project.imagePath %}' alt="{{project.imageAlt}}">
+            </a>
+            <div class="card-body">
+                    <h2 class="project-title" style="color: black; font-size:medium;">{{ project.title }}</h2>
+                    <h3 class="project-description" style="color: black; font-size: smaller;">{{project.description}}</h3>
+
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item" style="padding: 0px 20px; font-size: small;">
+                            <a href={{project.siteURL}} target="_blank">
+                                <i id="site" class="fas fa-globe-americas" style="color:black;"></i>
+                            </a>
+                        </li>
+                
+                        <li class="nav-item" style="padding: 0px 20px; font-size: small;">
+                            <a href={{project.gitURL}} target="_blank">
+                                <i id="github" class="fab fa-github" style="color:black;"></i>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
