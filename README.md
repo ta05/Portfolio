@@ -16,7 +16,7 @@ Tolu
 
 <br/>
 
-Credits to Traversy Media for their tutorial on Django, and Dennis Ivy for inspiration for my portfolio design.
+Credits to Traversy Media for their Django tutorials.
 
 - Traversy Media: https://www.youtube.com/user/TechGuyWeb
 - Dennis Ivy: https://www.youtube.com/channel/UCTZRcDjjkVajGL6wd76UnGg
