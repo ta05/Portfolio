@@ -1,0 +1,12 @@
+/* Styling for elements specific to the homepage */
+
+#profile-wrapper {
+    text-align: center;
+}
+
+#myimage {
+    max-width: 90%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
