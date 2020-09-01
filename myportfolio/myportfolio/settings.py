@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://tolu-alimi.herokuapp.com/', "*"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -143,6 +143,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 import dj_database_url
 
+prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'] = dj_database_url.config(
     default='mysql://eqs2bpv7um4wzrkq:nf2uznfd9tk0r6mo@u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nmshhctleeuu96qy',
 )
+DATABASES['default'].update(prod_db)
