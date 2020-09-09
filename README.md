@@ -1,6 +1,6 @@
 ## Welcome to my portfolio
 
-https://ta05.pythonanywhere.com/
+https://tolu-alimi.herokuapp.com/
 
 Here you can read up about me and find some my recent projects.
 
