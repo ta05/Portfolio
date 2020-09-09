@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -147,4 +147,3 @@ prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'] = dj_database_url.config(
     default='mysql://eqs2bpv7um4wzrkq:nf2uznfd9tk0r6mo@u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nmshhctleeuu96qy',
 )
-DATABASES['default'].update(prod_db)
