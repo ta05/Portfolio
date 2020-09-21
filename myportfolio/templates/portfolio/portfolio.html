@@ -7,7 +7,7 @@
         {% for project in project_list %}
         <div class="col-md-3 d-flex align-items-stretch">
             <div class="card mb-3" style="text-align: center; border: 2px solid rgba(255, 255, 255, 0.45);">
-                <a href="{% static project.fullImagePath %}" target="blank">
+                <a href="{% url 'portfolio:project' project.id %}">
                     <img class="card-img-top" src='{% static project.imagePath %}' alt="{{project.imageAlt}}">
                 </a>
                 <div class="card-body">
