@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'portfolio.apps.PortfolioConfig',
+    'sendemail.apps.SendemailConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -148,3 +149,9 @@ prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'] = dj_database_url.config(
     default='mysql://eqs2bpv7um4wzrkq:nf2uznfd9tk0r6mo@u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nmshhctleeuu96qy',
 )
+
+# Email Settings
+DEFAULT_FROM_EMAIL = 'talimi2000@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 8000
