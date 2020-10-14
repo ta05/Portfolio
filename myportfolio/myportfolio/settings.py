@@ -151,7 +151,10 @@ DATABASES['default'] = dj_database_url.config(
 )
 
 # Email Settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
 DEFAULT_FROM_EMAIL = 'talimi2000@gmail.com'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 8000
+EMAIL_HOST = 'smtp.sendgrid.net' # new
+EMAIL_HOST_USER = 'apikey' # new
+EMAIL_HOST_PASSWORD = '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' # new
+EMAIL_PORT = 587 # new
+EMAIL_USE_TLS = True # new
