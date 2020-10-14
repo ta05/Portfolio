@@ -2,36 +2,36 @@
 
 {% block content %}
 <div class="row" style="padding: 10px;">
-    <div class="col-md-10 offset-md-1">
+    <div class="col-md-8 offset-md-2">
         <div class="card" style="padding: 12px; text-align: left; border: 2px solid rgba(255, 255, 255, 0.45);">
                 <form method="post">
                     {% csrf_token %}
 
                 <div class="form-row">
 
-                <div class="form-group col-sm-6">
-                    <label for="Senders-Email">Email</label>
+                <div class="form-group col-md-6">
+                    <label for="Senders-Email" style="display: inline-block; width: 70px; text-align: left;">Email</label>
                     {{form.email}}
                 </div>
             </div>
 
             <div class="form-row">
 
-                <div class="form-group col-sm-6">
-                    <label for="Subject">Subject</label>
+                <div class="form-group col-md-6">
+                    <label for="Subject" style="display: inline-block; width: 70px; text-align: left;">Subject</label>
                     {{form.subject}}
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group col-sm">
-                    <label for="Message">Message</label>
+                <div class="form-group col-md" style="vertical-align: middle;">
+                    <label for="Message" style="display: inline-block; width: 70px; text-align: left;">Message</label>
                     {{form.message}}
                 </div>
             </div>
 
             <div class="form-actions">
-                    <button class="offset-sm-10 col-sm-2" type="submit">Send</button>
+                    <button class="offset-md-10 col-md-2" type="submit" style="min-width: 70px;">Send</button>
                     </div>
 
                 </form>
