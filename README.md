@@ -18,5 +18,3 @@ Credits to Traversy Media for their Django tutorials.
 
 - Traversy Media: https://www.youtube.com/user/TechGuyWeb
 - Dennis Ivy: https://www.youtube.com/channel/UCTZRcDjjkVajGL6wd76UnGg
-
-Contact Page is not complete. Will be worked on in the near-future.
