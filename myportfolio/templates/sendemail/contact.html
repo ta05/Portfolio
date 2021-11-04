@@ -4,37 +4,53 @@
 <div class="row" style="padding: 10px;">
     <div class="col-md-8 offset-md-2">
         <div class="card" style="padding: 12px; text-align: left; border: 2px solid rgba(255, 255, 255, 0.45);">
-                <form method="post">
-                    {% csrf_token %}
+            <form method="post">
+                {% csrf_token %}
 
                 <div class="form-row">
 
-                <div class="form-group col-md-6">
-                    <label for="Senders-Email" style="display: inline-block; width: 70px; text-align: left;">Email</label>
-                    {{form.email}}
-                </div>
-            </div>
-
-            <div class="form-row">
-
-                <div class="form-group col-md-6">
-                    <label for="Subject" style="display: inline-block; width: 70px; text-align: left;">Subject</label>
-                    {{form.subject}}
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group col-md" style="vertical-align: middle;">
-                    <label for="Message" style="display: inline-block; width: 70px; text-align: left;">Message</label>
-                    {{form.message}}
-                </div>
-            </div>
-
-            <div class="form-actions">
-                    <button class="offset-md-10 col-md-2" type="submit" style="min-width: 70px;">Send</button>
+                    <div class="form-group col-md-6">
+                        <label for="First-Name" style="display: inline-block; width: 70px; text-align: left;">First</label>
+                        {{form.first_name}}
                     </div>
+                </div>
 
-                </form>
+                <div class="form-row">
+
+                    <div class="form-group col-md-6">
+                        <label for="Last-Name" style="display: inline-block; width: 70px; text-align: left;">Last</label>
+                        {{form.last_name}}
+                    </div>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-6">
+                        <label for="Senders-Email" style="display: inline-block; width: 70px; text-align: left;">Email</label>
+                        {{form.email}}
+                    </div>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group col-md-6">
+                        <label for="Subject" style="display: inline-block; width: 70px; text-align: left;">Subject</label>
+                        {{form.subject}}
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md" style="vertical-align: middle;">
+                        <label for="Message" style="display: inline-block; width: 70px; text-align: left;">Message</label>
+                        {{form.message}}
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="offset-md-10 col-md-2" type="submit" style="min-width: 70px;">Send</button>
+                </div>
+
+            </form>
         </div>
     </div>
 </div>
